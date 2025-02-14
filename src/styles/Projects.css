@@ -1,0 +1,134 @@
+/* Projects Section */
+.projects-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3b82f6 100%);
+    color: white;
+    text-align: center;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .projects-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .projects-description {
+    font-size: 1.1rem;
+    color: #dbeafe;
+    margin-bottom: 40px;
+  }
+  
+  /* Project Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Image */
+  .project-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  /* Overlay with Buttons */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project-image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .view-btn, .github-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .view-btn:hover, .github-btn:hover {
+    background: white;
+    color: #1e3c72;
+  }
+  
+  /* Project Content */
+  .project-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .project-description {
+    color: #dbeafe;
+    margin-bottom: 10px;
+  }
+  
+  /* Technologies */
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .technology-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    border: 1px solid white;
+  }
+  

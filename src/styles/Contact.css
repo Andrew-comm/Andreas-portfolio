@@ -1,0 +1,99 @@
+/* Contact Section with a gradient background */
+.contact-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2a5298 0%, #3b82f6 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container centers the contact card */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contact Card with a glassmorphism effect */
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styles */
+.contact-header {
+  margin-bottom: 30px;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: #dbeafe;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  text-align: left;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #1d4ed8;
+  outline: none;
+}
+
+/* Submit Button */
+.contact-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1d4ed8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #1e40af;
+}
+
+/* Success Message */
+.contact-success {
+  margin-top: 20px;
+  color: #10b981;
+  font-size: 16px;
+  font-weight: bold;
+}
