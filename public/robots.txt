@@ -1,3 +1,12 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Prevent indexing of sensitive or unnecessary files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /node_modules/
+Disallow: /static/js/
+Disallow: /static/css/
+
+# Sitemap location (IMPORTANT)
+Sitemap: https://andrewrono-portfolio.netlify.app/sitemap.xml

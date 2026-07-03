@@ -131,4 +131,28 @@
     border-radius: 50px;
     border: 1px solid white;
   }
+
+  .projects-more {
+  margin-top: 40px;
+}
+
+.more-btn {
+  padding: 14px 30px;
+  border-radius: 999px;
+
+  background: white;
+  color: #1e3c72;
+
+  font-weight: 600;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.more-btn:hover {
+  transform: translateY(-3px);
+  background: #f1f5f9;
+}
   

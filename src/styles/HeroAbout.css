@@ -1,0 +1,226 @@
+/* =========================
+   SECTION BACKGROUND
+========================= */
+
+.hero-about-section {
+  min-height: 100vh;
+  position: relative;
+
+  background: linear-gradient(
+    135deg,
+    #1e3c72 0%,
+    #2a5298 50%,
+    #3b82f6 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   MINI NAV
+========================= */
+
+.mini-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  color: white;
+}
+
+.nav-logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.hero-about-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+
+  padding: 40px 60px;
+  gap: 40px;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.hero-about-content {
+  color: white;
+  max-width: 700px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  border-radius: 999px;
+  font-size: 0.85rem;
+
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+
+  color: rgba(255,255,255,0.85);
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  color: rgba(255,255,255,0.75);
+
+  margin-bottom: 25px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: flex;
+  gap: 30px;
+
+  margin-bottom: 30px;
+}
+
+.stat h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.stat p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary {
+  background: white;
+  color: #1e3c72;
+
+  padding: 14px 26px;
+  border-radius: 999px;
+  border: none;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary {
+  background: transparent;
+  color: white;
+
+  padding: 14px 26px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+/* =========================
+   IMAGE SECTION (PREMIUM)
+========================= */
+
+.hero-about-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card {
+  width: 320px;
+  height: 420px;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  transform: rotate(-8deg);
+
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .hero-about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .image-card {
+    transform: rotate(0deg);
+    width: 280px;
+    height: 360px;
+  }
+
+  .mini-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
