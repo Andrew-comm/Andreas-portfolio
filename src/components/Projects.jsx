@@ -3,17 +3,18 @@ import { motion } from 'framer-motion';
 import '../styles/Projects.css';
 
 const allProjects = [
+  
   {
     id: 1,
-    title: 'Siren K.A Andrew Engineering',
-    category: 'Civil Engineering Website',
-    image: '/images/Siren.png',
-    description:
-      'Professional civil engineering and infrastructure supervision website showcasing structural execution and project workflows.',
-    technologies: ['React.js', 'Netlify'],
-    github: 'https://github.com/Andrew-comm/siren-andrew-engineering',
-    live: 'https://siren-andrew-engineering.netlify.app/',
+    title: 'SwiftSale POS System',
+    category: 'Point of Sale',
+    image: '/images/SwiftSale.png',
+    description: 'POS system for inventory and sales management.',
+    technologies: ['Django', 'PostgreSQL'],
+    github: 'https://github.com/Andrew-comm/SwiftSale',
+    live: 'https://swiftsale.onrender.com/',
   },
+
   {
     id: 2,
     title: 'Cherono J. & Company Advocates',
@@ -81,13 +82,14 @@ const allProjects = [
   },
   {
     id: 8,
-    title: 'SwiftSale POS System',
-    category: 'Point of Sale',
-    image: '/images/SwiftSale.png',
-    description: 'POS system for inventory and sales management.',
-    technologies: ['Django', 'PostgreSQL'],
-    github: 'https://github.com/Andrew-comm/SwiftSale',
-    live: 'https://swiftsale.onrender.com/',
+    title: 'Siren K.A Andrew Engineering',
+    category: 'Civil Engineering Website',
+    image: '/images/Siren.png',
+    description:
+      'Professional civil engineering and infrastructure supervision website showcasing structural execution and project workflows.',
+    technologies: ['React.js', 'Netlify'],
+    github: 'https://github.com/Andrew-comm/siren-andrew-engineering',
+    live: 'https://siren-andrew-engineering.netlify.app/',
   },
 ];
 
